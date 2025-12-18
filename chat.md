@@ -1,6 +1,3 @@
-### `chat.md`
-
-```markdown
 # Research Log: Batch Processing & Quantum Simulation
 
 ## Theory: Vector vs. Matrix Inference
@@ -123,6 +120,8 @@ def quantum_step_generation(prompt_text, steps=5, branches=3):
 
         # PHASE 3: Pruning (Interference)
         paths = sorted(all_candidates, key=lambda x: x[1], reverse=True)[:10]
+```
+
 Interpretation
 Matrix Approach: torch.cat allows us to process all "universes" in one forward pass.
 
